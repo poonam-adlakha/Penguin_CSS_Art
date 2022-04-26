@@ -1,0 +1,233 @@
+body {
+    background: repeating-linear-gradient(45deg,
+            rgb(165, 205, 221),
+            rgb(164, 164, 238));
+}
+
+.container {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    margin-top: 10%;
+    margin-left: 20%;
+    align-self: center;
+}
+
+.cap {
+    width: 120px;
+    height: 75px;
+    position: relative;
+    background-image: linear-gradient(50deg, crimson, rgb(175, 34, 34));
+    border-radius: 90% 0% 5% 5%;
+    transform: translateX(150%) translateY(-50%);
+    z-index: 9;
+}
+
+.capTail {
+    width: 20px;
+    height: 60px;
+    background-image: linear-gradient(50deg, crimson, rgb(175, 34, 34));
+    border-radius: 10% 90% 10% 10%;
+    transform: translateX(730%) translateY(-62%);
+    z-index: 3;
+}
+
+.capFurr {
+    width: 30px;
+    height: 30px;
+    background: floralwhite;
+    border-radius: 50%;
+    transform: translateX(580%);
+    z-index: 4;
+}
+
+.capBottom {
+    width: 130px;
+    height: 30px;
+    background: floralwhite;
+    border-radius: 20%;
+    transform: translateX(5%) translateY(60%);
+    z-index: 10;
+}
+
+.head {
+    position: relative;
+    width: 140px;
+    height: 130px;
+    background: rgb(15, 15, 15);
+    border-radius: 50%;
+    transform: translateX(-92%) translateY(3%);
+    z-index: 7;
+}
+
+.leftFace {
+    position: relative;
+    width: 55px;
+    height: 70px;
+    background: rgb(252, 249, 249);
+    transform: translateY(70%) translateX(30%);
+    border-radius: 90% 90% 10% 90%;
+    z-index: 8;
+}
+
+.rightFace {
+    position: relative;
+    width: 55px;
+    height: 70px;
+    background: rgb(252, 249, 249);
+    transform: translateY(-30%) translateX(120%);
+    border-radius: 90% 90% 90% 10%;
+    z-index: 8;
+}
+
+.eyes:nth-child(1),
+.eyes:nth-child(2) {
+    position: relative;
+    display: inline-flex;
+    width: 10px;
+    height: 12px;
+    background: black;
+    border-radius: 45%;
+    z-index: 9;
+    animation: blink 2s ease-in-out infinite;
+}
+
+.eyes:nth-child(1) {
+    transform: translateX(540%) translateY(-570%);
+}
+
+.eyes:nth-child(2) {
+    transform: translateX(590%) translateY(-570%);
+}
+
+.nose {
+    position: relative;
+    width: 20px;
+    height: 14px;
+    background: linear-gradient(10deg, brown, rgb(241, 119, 48));
+    border-radius: 50% 50% 70% 70%;
+    transform: translateY(-455%) translateX(295%);
+    z-index: 9;
+}
+
+.blush:nth-child(1),
+.blush:nth-child(2) {
+    position: relative;
+    display: inline-flex;
+    width: 15px;
+    height: 15px;
+    background-image: radial-gradient(circle, pink, white);
+    border-radius: 50%;
+    z-index: 10;
+    animation: blushing 2s ease-in-out infinite;
+}
+
+.blush:nth-child(1) {
+    transform: translateX(220%) translateY(-580%);
+}
+
+.blush:nth-child(2) {
+    transform: translateX(440%) translateY(-580%);
+}
+
+.bottom {
+    position: relative;
+    width: 160px;
+    height: 200px;
+    background: rgb(15, 15, 15);
+    border-radius: 50%;
+    transform: translateX(-175%) translateY(53%);
+    z-index: 2;
+}
+
+.layer {
+    position: relative;
+    width: 140px;
+    height: 170px;
+    background: rgb(241, 240, 240);
+    border-radius: 50%;
+    transform: translateX(7%) translateY(10%);
+}
+
+.muff {
+    position: relative;
+    width: 95px;
+    height: 15px;
+    background: linear-gradient(20deg, green, rgb(16, 56, 12));
+    border-radius: 40%;
+    transform: translateY(790%) translateX(-492%);
+    z-index: 15;
+}
+
+.muffScarf {
+    position: relative;
+    width: 15px;
+    height: 75px;
+    background: linear-gradient(20deg, green, rgb(16, 56, 12));
+    border-radius: 30%;
+    transform: translateY(160%) translateX(-3700%);
+    z-index: 13;
+}
+
+.handLeft {
+    position: relative;
+    display: inline-flex;
+    width: 20px;
+    height: 80px;
+    background: linear-gradient(260deg, rgb(61, 58, 58), black);
+    border-radius: 20% 20% 50% 50%;
+    z-index: 1;
+    transform: translateX(-2250%) translateY(180%) rotate(50deg);
+    animation: flapLeft 2s ease-in-out infinite;
+}
+
+.handRight {
+    position: relative;
+    width: 20px;
+    height: 80px;
+    background: linear-gradient(260deg, rgb(61, 58, 58), black);
+    border-radius: 20% 20% 50% 50%;
+    z-index: 1;
+    transform: translateX(-1430%) translateY(70%) rotate(-50deg);
+    animation: flapRight 2s ease-in-out infinite;
+}
+
+.footLeft {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(10deg, brown, rgb(241, 119, 48));
+    border-radius: 50% 30% 30% 50%;
+    transform: translateX(-1080%) translateY(970%) rotate(5deg);
+}
+
+.footRight {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(10deg, brown, rgb(241, 119, 48));
+    border-radius: 30% 50% 50% 30%;
+    transform: translateX(-920%) translateY(870%) rotate(-5deg);
+}
+
+@keyframes blushing {
+    0% {
+        background-image: radial-gradient(circle, pink, white);
+    }
+
+    100% {
+        background-image: radial-gradient(circle, rgb(201, 113, 127), white);
+    }
+}
+
+@keyframes blink {
+    0% {
+        background: black;
+        border-radius: 50%;
+    }
+
+    100% {
+        border-radius: 35%;
+        background: rgb(63, 54, 54);
+    }
+}
